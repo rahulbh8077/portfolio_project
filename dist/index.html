@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rahul Bhadoriya | Data Scientist & AI Enthusiast Portfolio</title>
+  <meta name="description" content="Professional portfolio of Rahul Bhadoriya, an aspiring Data Scientist and Machine Learning Engineer. Exploring neural networks, predictive analytics, and RAG systems.">
+  <meta name="keywords" content="Data Science, Machine Learning, AI, Python, SQL, Neural Networks, Analytics Portfolio">
+  <meta name="author" content="Rahul Bhadoriya">
+  
+  <!-- Preconnect to external services for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Core Tailwind & Custom Styles -->
+  <script type="module" crossorigin src="/assets/index-snWcM22F.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-C1LMUEBm.css">
+</head>
+<body class="bg-white dark:bg-darkBg text-slate-900 dark:text-slate-100 antialiased selection:bg-accentCyan/30 selection:text-white transition-colors duration-300">
+
+  <!-- Scroll Progress Indicator -->
+  <div id="scrollProgressBar" class="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Background Decorative Meshes -->
+  <div class="bg-mesh" aria-hidden="true"></div>
+  <div class="bg-dot-grid" aria-hidden="true"></div>
+
+  <!-- 1. Sticky Navigation Bar -->
+  <header id="stickyNavbar" class="fixed top-0 left-0 w-full z-50 bg-black/40 backdrop-blur-md border-b border-white/[0.06] transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="#hero" class="text-xl font-bold tracking-tight text-white flex items-center gap-2">
+        <span class="w-1.5 h-1.5 rounded-full bg-white animate-ping"></span>
+        RAHUL<span class="text-[#BDBDBD] font-normal font-mono">.ds()</span>
+      </a>
+
+      <!-- Desktop Nav Menu -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-semibold" aria-label="Main Navigation">
+        <a href="#hero" class="premium-nav-link active">Home</a>
+        <a href="#about" class="premium-nav-link">About</a>
+        <a href="#skills" class="premium-nav-link">Skills</a>
+        <a href="#projects" class="premium-nav-link">Projects</a>
+        <a href="#experience" class="premium-nav-link">Experience</a>
+        <a href="#contact" class="premium-nav-link">Contact</a>
+      </nav>
+
+      <!-- Theme Toggle & Mobile Menu Controls -->
+      <div class="flex items-center gap-4">
+        <!-- Theme Toggle Button -->
+        <button id="themeToggleBtn" class="p-2 rounded-lg bg-white/5 border border-white/10 hover:border-white/20 text-[#BDBDBD] hover:text-white transition-all" aria-label="Toggle dark/light theme">
+          <span id="themeToggleIcon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m12.728 0l-.707-.707M6.343 6.343l-.707-.707M12 7a5 5 0 100 10 5 5 0 000-10z" />
+            </svg>
+          </span>
+        </button>
+
+        <!-- Mobile Menu Toggle -->
+        <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg bg-white/5 border border-white/10 text-[#BDBDBD] hover:text-white" aria-label="Open navigation menu">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Nav Dropdown (Hidden by default) -->
+    <div id="mobileMenu" class="hidden md:hidden absolute top-16 left-0 w-full bg-black/95 backdrop-blur-lg border-b border-white/[0.08] p-6 flex flex-col gap-4 text-center z-40">
+      <a href="#hero" class="text-[#BDBDBD] hover:text-white py-2 border-b border-white/5 premium-nav-link">Home</a>
+      <a href="#about" class="text-[#BDBDBD] hover:text-white py-2 border-b border-white/5 premium-nav-link">About</a>
+      <a href="#skills" class="text-[#BDBDBD] hover:text-white py-2 border-b border-white/5 premium-nav-link">Skills</a>
+      <a href="#projects" class="text-[#BDBDBD] hover:text-white py-2 border-b border-white/5 premium-nav-link">Projects</a>
+      <a href="#experience" class="text-[#BDBDBD] hover:text-white py-2 border-b border-white/5 premium-nav-link">Experience</a>
+      <a href="#contact" class="text-[#BDBDBD] hover:text-white py-2 premium-nav-link">Contact</a>
+    </div>
+  </header>
+
+  <!-- 1. Redesigned Hero Section — Luxury, Minimalist Matte Black -->
+  <section id="hero" class="relative min-h-screen flex items-center justify-center pt-24 pb-16 overflow-hidden bg-black">
+    <!-- Premium noise overlay -->
+    <div class="hero-noise" aria-hidden="true"></div>
+
+    <!-- Soft spotlight following cursor -->
+    <div class="spotlight-overlay absolute inset-0 z-0 pointer-events-none" style="background: radial-gradient(800px circle at var(--x, 50%) var(--y, 50%), rgba(255, 255, 255, 0.035), transparent 80%);"></div>
+
+    <!-- Background subtle ambient rotating halos -->
+    <div class="absolute top-1/4 left-1/4 w-96 h-96 rounded-full bg-white/[0.01] blur-[120px] pointer-events-none rotating-halo" aria-hidden="true"></div>
+    <div class="absolute bottom-1/4 right-1/4 w-96 h-96 rounded-full bg-white/[0.01] blur-[120px] pointer-events-none rotating-halo" style="animation-delay: -10s;" aria-hidden="true"></div>
+
+    <!-- Background particles canvas -->
+    <canvas id="particlesCanvas" class="absolute inset-0 z-0 opacity-20 pointer-events-none"></canvas>
+
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-12 gap-12 items-center relative z-10 w-full">
+      <!-- Left Side Typography Column -->
+      <div class="md:col-span-7 hero-content text-left space-y-6">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/[0.03] border border-white/[0.08] text-[#BDBDBD] text-xs font-semibold tracking-wider">
+          Hello, I'm
+        </div>
+
+        <!-- Luxury Mirror Shine Heading -->
+        <h1 class="text-6xl sm:text-8xl font-black tracking-tighter leading-[0.95] text-white">
+          <span class="profile-name block mirror-shine-text">Rahul Bhadoriya</span>
+        </h1>
+
+        <!-- Title & Subtitle Typing Box -->
+        <div class="space-y-1">
+          <h2 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">Data Scientist</h2>
+          <div class="text-lg sm:text-xl font-semibold text-[#BDBDBD] h-8 flex items-center">
+            <span id="typingSkills" class="typing-cursor text-white"></span>
+          </div>
+        </div>
+
+        <!-- Description / Introduction -->
+        <p id="heroTagline" class="text-[#8C8C8C] text-md sm:text-lg max-w-xl leading-relaxed">
+          I transform raw data into meaningful insights through analytics, machine learning, and intelligent solutions. Passionate about building impactful AI-driven applications and continuously learning new technologies.
+        </p>
+
+        <!-- Premium Buttons -->
+        <div class="flex flex-wrap gap-4 pt-4">
+          <a href="#projects" class="px-8 py-4 rounded-full bg-white text-black font-semibold shadow-[0_0_20px_rgba(255,255,255,0.1)] hover:shadow-[0_0_30px_rgba(255,255,255,0.25)] hover:bg-neutral-100 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 flex items-center gap-2">
+            View Projects
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          </a>
+          <a href="https://drive.google.com/file/d/1aQEG-Es5LXjs0S8A0IG4gWa7J9HPo6FD/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="px-8 py-4 rounded-full border border-white/10 hover:border-white/30 text-white font-semibold hover:bg-white/[0.03] hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 flex items-center gap-2 backdrop-blur-sm">
+            Download Resume
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Side Professional GitHub Redirect Column -->
+      <a href="https://github.com/rahulbh8077" target="_blank" rel="noopener noreferrer" class="md:col-span-5 flex justify-center relative float-element cursor-pointer group">
+        <!-- Blurred halo backdrop -->
+        <div class="absolute w-80 h-80 rounded-full bg-white/[0.03] filter blur-[60px] rotating-halo"></div>
+
+        <!-- Glassmorphism Ring & Circular Profile Wrapper -->
+        <div class="relative w-80 h-80 sm:w-96 sm:h-96 rounded-full p-2 bg-gradient-to-tr from-white/10 via-white/5 to-white/20 shadow-[0_0_50px_rgba(255,255,255,0.05)] border border-white/10 flex items-center justify-center transition-all duration-500 group-hover:scale-[1.03]">
+          <div class="w-full h-full bg-neutral-950 rounded-full overflow-hidden flex items-center justify-center relative p-8">
+            <!-- Grid backdrop decoration -->
+            <div class="absolute inset-0 opacity-[0.03] pointer-events-none" aria-hidden="true">
+              <svg class="w-full h-full" fill="none" viewBox="0 0 100 100">
+                <pattern id="heroRightGrid" width="10" height="10" patternUnits="userSpaceOnUse">
+                  <path d="M 10 0 L 0 0 0 10" fill="none" stroke="white" stroke-width="0.5"/>
+                </pattern>
+                <rect width="100" height="100" fill="url(#heroRightGrid)" />
+              </svg>
+            </div>
+
+            <!-- Soft white ambient glow behind the avatar icon/neural lines -->
+            <div class="absolute w-48 h-48 rounded-full bg-white/[0.04] filter blur-2xl group-hover:bg-white/[0.08] transition-colors duration-700"></div>
+
+            <!-- AI network lines & Floating data nodes (Neural Network SVG) -->
+            <svg class="w-full h-full text-white/25 absolute inset-0 pointer-events-none z-10" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <!-- Network paths -->
+              <path d="M 40,100 L 70,70" stroke="rgba(255,255,255,0.15)" stroke-width="1" stroke-dasharray="2,2"/>
+              <path d="M 40,100 L 70,130" stroke="rgba(255,255,255,0.15)" stroke-width="1" stroke-dasharray="2,2"/>
+              <path d="M 70,70 L 110,60" stroke="rgba(255,255,255,0.18)" stroke-width="1"/>
+              <path d="M 70,70 L 100,100" stroke="rgba(255,255,255,0.18)" stroke-width="1"/>
+              <path d="M 70,130 L 100,100" stroke="rgba(255,255,255,0.18)" stroke-width="1"/>
+              <path d="M 70,130 L 110,140" stroke="rgba(255,255,255,0.18)" stroke-width="1"/>
+              <path d="M 110,60 L 150,80" stroke="rgba(255,255,255,0.15)" stroke-width="1" stroke-dasharray="2,2"/>
+              <path d="M 100,100 L 150,80" stroke="rgba(255,255,255,0.18)" stroke-width="1"/>
+              <path d="M 100,100 L 150,120" stroke="rgba(255,255,255,0.18)" stroke-width="1"/>
+              <path d="M 110,140 L 150,120" stroke="rgba(255,255,255,0.15)" stroke-width="1" stroke-dasharray="2,2"/>
+              <path d="M 150,80 L 180,100" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+              <path d="M 150,120 L 180,100" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+              
+              <!-- Floating Nodes (Nodes that glow/pulse) -->
+              <circle cx="40" cy="100" r="4" fill="rgba(255,255,255,0.3)" class="pulse-node"/>
+              <circle cx="70" cy="70" r="3.5" fill="rgba(255,255,255,0.4)" class="pulse-node" style="animation-delay: 0.5s;"/>
+              <circle cx="70" cy="130" r="3.5" fill="rgba(255,255,255,0.4)" class="pulse-node" style="animation-delay: 1s;"/>
+              <circle cx="110" cy="60" r="3" fill="rgba(255,255,255,0.3)" class="pulse-node" style="animation-delay: 1.5s;"/>
+              <circle cx="100" cy="100" r="5" fill="rgba(255,255,255,0.6)" class="pulse-node" style="animation-delay: 0.2s;"/>
+              <circle cx="110" cy="140" r="3" fill="rgba(255,255,255,0.3)" class="pulse-node" style="animation-delay: 2.2s;"/>
+              <circle cx="150" cy="80" r="4" fill="rgba(255,255,255,0.5)" class="pulse-node" style="animation-delay: 0.8s;"/>
+              <circle cx="150" cy="120" r="4" fill="rgba(255,255,255,0.5)" class="pulse-node" style="animation-delay: 1.8s;"/>
+              <circle cx="180" cy="100" r="6" fill="rgba(255,255,255,0.7)" class="pulse-node" style="animation-delay: 2.5s;"/>
+            </svg>
+
+            <!-- Circular profile avatar with glowing GitHub logo inside -->
+            <div class="relative w-44 h-44 rounded-full border border-white/20 flex flex-col items-center justify-center bg-white/[0.01] shadow-[0_0_30px_rgba(255,255,255,0.05)] overflow-hidden z-20 group-hover:border-white/40 transition-colors duration-500">
+              <!-- Glass shine reflection sweep -->
+              <div class="absolute inset-0 bg-gradient-to-tr from-transparent via-white/5 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out"></div>
+              
+              <!-- Glowing White GitHub SVG Icon -->
+              <svg class="w-16 h-16 text-white/80 group-hover:text-white transition-colors duration-500 drop-shadow-[0_0_15px_rgba(255,255,255,0.35)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg>
+              
+              <!-- Dynamic mini user tag overlay -->
+              <span class="text-[10px] font-mono text-[#8C8C8C] mt-2 tracking-wider group-hover:text-white transition-colors">@rahulbh8077</span>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- Minimal animated mouse Scroll Down indicator -->
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2">
+      <span class="text-[10px] font-mono text-[#8C8C8C] tracking-widest uppercase animate-pulse">Scroll Down</span>
+      <div class="w-5 h-9 rounded-full border border-white/20 flex justify-center p-1.5 relative overflow-hidden" style="background: rgba(255,255,255,0.02);">
+        <div class="w-1 h-2 rounded-full bg-white animate-scroll-wheel"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. About Me Section -->
+  <section id="about" class="py-24 relative border-t border-slate-100/5 dark:border-slate-800/30">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-3xl mx-auto mb-16 p-6 rounded-2xl bg-cardLight dark:bg-cardDark border border-slate-200 dark:border-accentBlue/20 shadow-md dark:shadow-glow-blue backdrop-blur-md reveal-hidden">
+        <h2 class="text-xs font-mono font-bold uppercase tracking-widest text-accentBlue mb-2">01. About Me</h2>
+        <p class="text-2xl sm:text-3xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-snug">Discover My Learning & Career Pathway</p>
+      </div>
+
+      <div class="grid md:grid-cols-12 gap-12 items-start">
+        <!-- Narrative Description (Left) -->
+        <div class="md:col-span-6 space-y-6">
+          <h3 class="text-2xl font-bold dark:text-slate-200">Driven by Data, Inspired by AI</h3>
+          <p id="aboutIntro" class="text-slate-600 dark:text-slate-400 leading-relaxed text-base">
+            I am a passionate Data Scientist and AI enthusiast dedicated to extracting actionable insights from complex datasets and building intelligent systems...
+          </p>
+          
+          <!-- Career Objective Panel -->
+          <div class="glass-card p-6 border-slate-200 dark:border-slate-800/40">
+            <h4 class="text-md font-bold text-accentCyan mb-2">Career Objective</h4>
+            <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+              Seeking to leverage machine learning, deep learning, and advanced statistical modeling pipelines at top-tier tech environments to solve predictive optimization problems and build clean scalable models.
+            </p>
+          </div>
+
+          <!-- Fun Facts Box -->
+          <div class="grid grid-cols-2 gap-4">
+            <div class="glass-card p-4 text-center">
+              <span class="text-2xl block mb-1">☕</span>
+              <h5 class="text-sm font-bold text-slate-800 dark:text-slate-200">1200+ Liters</h5>
+              <p class="text-[10px] text-slate-600 dark:text-slate-500 font-semibold uppercase tracking-wider">Coffee Consumed</p>
+            </div>
+            <div class="glass-card p-4 text-center">
+              <span class="text-2xl block mb-1">🎧</span>
+              <h5 class="text-sm font-bold text-slate-800 dark:text-slate-200">Synthwave</h5>
+              <p class="text-[10px] text-slate-600 dark:text-slate-500 font-semibold uppercase tracking-wider">Coding Soundtrack</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education History Timeline (Right) -->
+        <div class="md:col-span-6 space-y-6">
+          <h3 class="text-2xl font-bold dark:text-slate-200">Academic Credentials</h3>
+          <div id="educationContainer" class="space-y-4">
+            <!-- Injected via JavaScript -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Skills Section -->
+  <section id="skills" class="py-24 relative border-t border-slate-100/5 dark:border-slate-800/30">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-3xl mx-auto mb-16 p-6 rounded-2xl bg-cardLight dark:bg-cardDark border border-slate-200 dark:border-accentCyan/20 shadow-md dark:shadow-glow-cyan backdrop-blur-md reveal-hidden">
+        <h2 class="text-xs font-mono font-bold uppercase tracking-widest text-accentCyan mb-2">02. Skills Directory</h2>
+        <p class="text-2xl sm:text-3xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-snug">Professional Technical Competencies</p>
+      </div>
+
+      <!-- Filters & Search Controls for Skills -->
+      <div class="flex flex-col md:flex-row gap-6 justify-between items-center mb-12">
+        <!-- Category filters -->
+        <div class="flex flex-wrap gap-2 text-xs" role="tablist" aria-label="Skill categories">
+          <button class="skill-filter-btn px-4 py-2 rounded-lg font-semibold bg-accentCyan text-white shadow-glow-cyan transition-all" data-filter="All" role="tab" aria-selected="true">All</button>
+          <button class="skill-filter-btn px-4 py-2 rounded-lg font-semibold bg-slate-800/40 border border-slate-200 dark:border-slate-800/30 text-slate-300 hover:text-white transition-all" data-filter="programming" role="tab" aria-selected="false">Programming Languages</button>
+          <button class="skill-filter-btn px-4 py-2 rounded-lg font-semibold bg-slate-800/40 border border-slate-200 dark:border-slate-800/30 text-slate-300 hover:text-white transition-all" data-filter="dataScience" role="tab" aria-selected="false">Data Science Core</button>
+          <button class="skill-filter-btn px-4 py-2 rounded-lg font-semibold bg-slate-800/40 border border-slate-200 dark:border-slate-800/30 text-slate-300 hover:text-white transition-all" data-filter="libraries" role="tab" aria-selected="false">Frameworks & Libraries</button>
+          <button class="skill-filter-btn px-4 py-2 rounded-lg font-semibold bg-slate-800/40 border border-slate-200 dark:border-slate-800/30 text-slate-300 hover:text-white transition-all" data-filter="visualization" role="tab" aria-selected="false">Visualization & Tools</button>
+          <button class="skill-filter-btn px-4 py-2 rounded-lg font-semibold bg-slate-800/40 border border-slate-200 dark:border-slate-800/30 text-slate-300 hover:text-white transition-all" data-filter="softSkills" role="tab" aria-selected="false">Soft Skills</button>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="w-full md:w-72 relative">
+          <label for="skillSearchInput" class="sr-only">Search skills</label>
+          <input type="text" id="skillSearchInput" placeholder="Search skills by name..." class="w-full bg-slate-800/30 border border-slate-200 dark:border-slate-800/40 rounded-lg px-4 py-2 pl-10 text-sm text-slate-200 placeholder-slate-500 focus:outline-none focus:border-accentCyan focus:ring-1 focus:ring-accentCyan transition-all">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-slate-500 absolute left-3 top-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+          </svg>
+        </div>
+      </div>
+
+      <!-- Skills Grid Layout -->
+      <div id="skillsGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Chart.js Radar Card (Visible on 'All') -->
+        <div id="radarChartCard" class="glass-card p-6 flex flex-col items-center justify-center border-slate-200 dark:border-slate-800/40 sm:col-span-2 lg:col-span-1">
+          <h3 class="text-lg font-bold text-slate-300 mb-4 text-center">Skill Mapping Metrics</h3>
+          <div class="chart-container h-72 w-full relative">
+            <canvas id="skillsRadarChart"></canvas>
+          </div>
+        </div>
+
+        <!-- Dynamic Category Cards -->
+        <div id="card-programming" class="glass-card p-6 border-slate-200 dark:border-slate-800/40 skill-category-card" data-category="programming">
+          <h4 class="text-md font-bold text-accentBlue mb-4 flex items-center gap-2">
+            <span>💻</span> Programming Languages
+          </h4>
+          <div id="skillsProgramming"></div>
+        </div>
+
+        <div id="card-dataScience" class="glass-card p-6 border-slate-200 dark:border-slate-800/40 skill-category-card" data-category="dataScience">
+          <h4 class="text-md font-bold text-accentCyan mb-4 flex items-center gap-2">
+            <span>🧠</span> Data Science Core
+          </h4>
+          <div id="skillsDataScience"></div>
+        </div>
+
+        <div id="card-libraries" class="glass-card p-6 border-slate-200 dark:border-slate-800/40 skill-category-card" data-category="libraries">
+          <h4 class="text-md font-bold text-accentPurple mb-4 flex items-center gap-2">
+            <span>📚</span> Frameworks & Libraries
+          </h4>
+          <div id="skillsLibraries"></div>
+        </div>
+
+        <div id="card-visualization" class="glass-card p-6 border-slate-200 dark:border-slate-800/40 skill-category-card" data-category="visualization">
+          <h4 class="text-md font-bold text-yellow-500 mb-4 flex items-center gap-2">
+            <span>📊</span> Visualization & Tools
+          </h4>
+          <div id="skillsVisualization" class="mb-4"></div>
+          <h4 class="text-xs font-bold text-slate-500 uppercase tracking-widest mb-2">Workspace Utilities</h4>
+          <div id="skillsTools"></div>
+        </div>
+
+        <div id="card-softSkills" class="glass-card p-6 border-slate-200 dark:border-slate-800/40 skill-category-card sm:col-span-2 lg:col-span-2" data-category="softSkills">
+          <h4 class="text-md font-bold text-slate-800 dark:text-slate-200 mb-4 flex items-center gap-2">
+            <span>🤝</span> Collaborative Soft Skills
+          </h4>
+          <div id="skillsSoft" class="grid sm:grid-cols-2 gap-x-6"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Featured Projects Section -->
+  <section id="projects" class="py-24 relative border-t border-slate-100/5 dark:border-slate-800/30">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-3xl mx-auto mb-16 p-6 rounded-2xl bg-cardLight dark:bg-cardDark border border-slate-200 dark:border-accentPurple/20 shadow-md dark:shadow-glow-purple backdrop-blur-md reveal-hidden">
+        <h2 class="text-xs font-mono font-bold uppercase tracking-widest text-accentPurple mb-2">03. Project Showcase</h2>
+        <p class="text-2xl sm:text-3xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-snug">Practical AI & Data Engineering Applications</p>
+      </div>
+
+      <!-- Filters & Search Controls -->
+      <div class="flex flex-col md:flex-row gap-6 justify-between items-center mb-12">
+        <!-- Category filters -->
+        <div class="flex flex-wrap gap-2 text-xs" role="tablist" aria-label="Project categories">
+          <button class="filter-btn px-4 py-2 rounded-lg font-semibold bg-accentBlue text-white shadow-glow-blue transition-all" data-filter="All" role="tab" aria-selected="true">All</button>
+          <button class="filter-btn px-4 py-2 rounded-lg font-semibold bg-slate-800/40 border border-slate-200 dark:border-slate-800/30 text-slate-300 hover:text-white transition-all" data-filter="Machine Learning" role="tab" aria-selected="false">Machine Learning</button>
+          <button class="filter-btn px-4 py-2 rounded-lg font-semibold bg-slate-800/40 border border-slate-200 dark:border-slate-800/30 text-slate-300 hover:text-white transition-all" data-filter="Data Analytics" role="tab" aria-selected="false">Data Analytics</button>
+          <button class="filter-btn px-4 py-2 rounded-lg font-semibold bg-slate-800/40 border border-slate-200 dark:border-slate-800/30 text-slate-300 hover:text-white transition-all" data-filter="Web App" role="tab" aria-selected="false">Web Applications</button>
+          <button class="filter-btn px-4 py-2 rounded-lg font-semibold bg-slate-800/40 border border-slate-200 dark:border-slate-800/30 text-slate-300 hover:text-white transition-all" data-filter="AI & GenAI" role="tab" aria-selected="false">AI & GenAI</button>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="w-full md:w-72 relative">
+          <label for="projectSearchInput" class="sr-only">Search projects</label>
+          <input type="text" id="projectSearchInput" placeholder="Search by name or tech..." class="w-full bg-slate-800/30 border border-slate-200 dark:border-slate-800/40 rounded-lg px-4 py-2 pl-10 text-sm text-slate-200 placeholder-slate-500 focus:outline-none focus:border-accentBlue focus:ring-1 focus:ring-accentBlue transition-all">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-slate-500 absolute left-3 top-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+          </svg>
+        </div>
+      </div>
+
+      <!-- Projects Grid Layout -->
+      <div id="projectsGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <!-- Dynamic project cards injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Details Modal (Hidden by default) -->
+  <div id="projectModal" class="fixed inset-0 z-[100] bg-slate-950/80 backdrop-blur-md opacity-0 pointer-events-none flex items-center justify-center p-4 transition-opacity duration-300" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="glass-card max-w-3xl w-full max-h-[90vh] overflow-y-auto border-slate-200 dark:border-slate-800/50 p-6 md:p-8 relative">
+      <!-- Close button -->
+      <button id="closeModalBtn" class="absolute top-4 right-4 text-slate-600 dark:text-slate-400 hover:text-slate-950 dark:hover:text-white hover:scale-110 transition-all p-2 rounded-full hover:bg-slate-800" aria-label="Close modal">
+        ✕
+      </button>
+
+      <div class="space-y-6">
+        <div>
+          <span id="modalCategory" class="text-xs font-bold text-accentCyan uppercase tracking-widest">Category</span>
+          <h3 id="modalTitle" class="text-2xl md:text-3xl font-extrabold text-slate-900 dark:text-white mt-1">Project Title</h3>
+        </div>
+
+        <!-- Tech Stack -->
+        <div>
+          <h4 class="text-xs font-bold text-slate-600 dark:text-slate-400 uppercase tracking-wider mb-2">Core Tech Stack</h4>
+          <div id="modalTechStack" class="flex flex-wrap gap-2"></div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="space-y-4">
+            <div>
+              <h4 class="text-sm font-bold text-accentBlue">The Challenge</h4>
+              <p id="modalChallenge" class="text-sm text-slate-600 dark:text-slate-400 mt-1 leading-relaxed"></p>
+            </div>
+            <div>
+              <h4 class="text-sm font-bold text-accentCyan">The Solution</h4>
+              <p id="modalSolution" class="text-sm text-slate-600 dark:text-slate-400 mt-1 leading-relaxed"></p>
+            </div>
+          </div>
+
+          <div class="space-y-4">
+            <div>
+              <h4 class="text-sm font-bold text-slate-900 dark:text-white">Project Overview</h4>
+              <p id="modalDescription" class="text-sm text-slate-600 dark:text-slate-400 mt-1 leading-relaxed"></p>
+            </div>
+            <div>
+              <h4 class="text-sm font-bold text-accentPurple">Key Features</h4>
+              <ul id="modalFeatures" class="space-y-1.5 mt-2"></ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Results / Impact block -->
+        <div class="p-4 rounded-lg bg-accentBlue/10 border border-accentBlue/20">
+          <h4 class="text-sm font-bold text-accentBlue flex items-center gap-1.5">
+            📊 Quantifiable Result / Impact Metrics:
+          </h4>
+          <p id="modalMetrics" class="text-sm font-semibold text-slate-700 dark:text-slate-200 mt-1"></p>
+        </div>
+
+        <!-- Action Links -->
+        <div class="flex justify-end gap-4 pt-4 border-t border-slate-100/50 dark:border-slate-800/30">
+          <a id="modalCodeLink" href="#" target="_blank" class="px-5 py-2.5 rounded-lg border border-slate-200 dark:border-slate-800/40 text-sm font-semibold text-slate-300 hover:text-white hover:border-slate-500 transition-all flex items-center gap-2">
+            GitHub Code
+          </a>
+          <a id="modalLiveLink" href="#" target="_blank" class="px-5 py-2.5 rounded-lg bg-accentBlue hover:bg-blue-600 text-sm font-semibold text-white shadow-glow-blue transition-all flex items-center gap-2">
+            Live Demo
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5. Experience Section -->
+  <section id="experience" class="py-24 relative border-t border-slate-100/5 dark:border-slate-800/30">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-3xl mx-auto mb-16 p-6 rounded-2xl bg-cardLight dark:bg-cardDark border border-slate-200 dark:border-accentBlue/20 shadow-md dark:shadow-glow-blue backdrop-blur-md reveal-hidden">
+        <h2 class="text-xs font-mono font-bold uppercase tracking-widest text-accentBlue mb-2">04. Milestones</h2>
+        <p class="text-2xl sm:text-3xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-snug">Practical Timeline Experience</p>
+      </div>
+
+      <div id="experienceTimeline" class="relative w-full max-w-5xl mx-auto">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Certifications Section -->
+  <section id="certifications" class="py-24 relative border-t border-slate-100/5 dark:border-slate-800/30">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-3xl mx-auto mb-16 p-6 rounded-2xl bg-cardLight dark:bg-cardDark border border-slate-200 dark:border-accentCyan/20 shadow-md dark:shadow-glow-cyan backdrop-blur-md reveal-hidden">
+        <h2 class="text-xs font-mono font-bold uppercase tracking-widest text-accentCyan mb-2">05. Accreditations</h2>
+        <p class="text-2xl sm:text-3xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-snug">Earned Professional Certifications</p>
+      </div>
+
+      <!-- Certifications Grid -->
+      <div id="certificationsGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <!-- Injected via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Achievements Section -->
+  <section id="achievements" class="py-20 relative bg-slate-900/30 border-t border-slate-100/5 dark:border-slate-800/30">
+    <div class="max-w-7xl mx-auto px-6">
+      <div id="achievementsGrid" class="grid grid-cols-2 lg:grid-cols-6 gap-6">
+        <!-- Injected dynamically -->
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. Data Science Journey Section -->
+  <section id="journey" class="py-24 relative border-t border-slate-100/5 dark:border-slate-800/30">
+    <div class="max-w-4xl mx-auto px-6 space-y-8">
+      <div class="text-center max-w-3xl mx-auto mb-16 p-6 rounded-2xl bg-cardLight dark:bg-cardDark border border-slate-200 dark:border-accentPurple/20 shadow-md dark:shadow-glow-purple backdrop-blur-md reveal-hidden">
+        <span class="text-[10px] font-mono font-bold uppercase tracking-widest text-accentPurple mb-1 block">06. Learning roadmap</span>
+        <h3 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-snug">Data Science Journey</h3>
+      </div>
+      <div id="roadmapContainer" class="pl-2">
+        <!-- Roadmaps injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. Tech Stack Section — Ultra Premium Minimal Matte Black -->
+  <section id="tech-stack" class="py-24 relative border-t border-slate-100/5 dark:border-slate-800/30 bg-black">
+    <!-- Premium noise overlay -->
+    <div class="hero-noise" aria-hidden="true"></div>
+
+    <div class="max-w-7xl mx-auto px-6 space-y-12 relative z-10">
+      <div class="text-center max-w-4xl mx-auto mb-16 space-y-4 reveal-hidden">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/[0.03] border border-white/[0.08] text-xs font-semibold tracking-[0.2em] text-[#BDBDBD] uppercase mx-auto">
+          <span class="w-1.5 h-1.5 rounded-full bg-white animate-pulse"></span>
+          07. Tech Stack
+        </div>
+        <h2 class="text-4xl sm:text-5xl font-black tracking-tight text-white leading-tight">
+          My Technical Ecosystem
+        </h2>
+        <div class="w-24 h-[1px] bg-gradient-to-r from-transparent via-white/30 to-transparent mx-auto"></div>
+        <p class="text-[#8C8C8C] text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">
+          Technologies, frameworks, libraries, and tools I leverage to engineer production-ready Machine Learning, Artificial Intelligence, and Analytical solutions.
+        </p>
+      </div>
+
+      <!-- Categories Responsive Grid -->
+      <div id="techStackGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <!-- Dynamically injected category glass cards -->
+      </div>
+    </div>
+  </section>
+
+
+  <!-- 08. Resume Section Preview -->
+  <section id="resume" class="py-24 relative border-t border-slate-100/5 dark:border-slate-800/30">
+    <div class="max-w-7xl mx-auto px-6 text-center space-y-8">
+      <div class="text-center max-w-3xl mx-auto mb-16 p-6 rounded-2xl bg-cardLight dark:bg-cardDark border border-slate-200 dark:border-accentPurple/20 shadow-md dark:shadow-glow-purple backdrop-blur-md reveal-hidden">
+        <h2 class="text-xs font-mono font-bold uppercase tracking-widest text-accentPurple mb-2">08. Curriculum Vitae</h2>
+        <p class="text-2xl sm:text-3xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-snug">Get a Detailed Copy of My Resume</p>
+      </div>
+
+      <p class="text-slate-600 dark:text-slate-400 max-w-xl mx-auto">
+        Need to evaluate my qualifications in detail or share my path with other recruiters? Access the complete curriculum vitae below.
+      </p>
+
+      <div class="flex justify-center gap-4">
+        <button id="downloadResumeBtn" class="btn-glow px-6 py-3 rounded-lg bg-accentBlue text-white font-semibold shadow-glow-blue hover:bg-blue-600 transition-all flex items-center gap-2">
+          Download PDF / Print
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+        </button>
+      </div>
+
+      <!-- In-page Live Preview (Hidden by default, shown by viewResumeBtn / js actions) -->
+      <div id="resumePreviewContainer" class="hidden pt-8 reveal-hidden transition-all duration-500">
+        <div id="resumePreviewDisplay" class="max-w-3xl mx-auto"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 09. Contact Me Section -->
+  <section id="contact" class="py-24 relative border-t border-slate-100/5 dark:border-slate-800/30">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-3xl mx-auto mb-16 p-6 rounded-2xl bg-cardLight dark:bg-cardDark border border-slate-200 dark:border-accentBlue/20 shadow-md dark:shadow-glow-blue backdrop-blur-md reveal-hidden">
+        <h2 class="text-xs font-mono font-bold uppercase tracking-widest text-accentBlue mb-2">09. Get In Touch</h2>
+        <p class="text-2xl sm:text-3xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-snug">Send Me a Message</p>
+      </div>
+
+      <div class="grid md:grid-cols-12 gap-12 items-center max-w-5xl mx-auto">
+        <!-- Left Side Info -->
+        <div class="md:col-span-5 space-y-6">
+          <h3 class="text-2xl font-bold dark:text-white">Let's Collaborate</h3>
+          <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+            Have an open internship, research role, project idea, or simply want to chat about AI/ML models? Reach out and I will reply as soon as possible.
+          </p>
+          
+          <div class="space-y-4">
+            <div class="flex items-center gap-3">
+              <span class="w-10 h-10 rounded-lg bg-accentBlue/10 flex items-center justify-center text-accentBlue text-lg">📧</span>
+              <div>
+                <h4 class="text-xs text-slate-500 font-bold uppercase">Direct Email</h4>
+                <p class="text-sm font-semibold text-slate-700 dark:text-slate-400">rahulbh8077@gmail.com</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="w-10 h-10 rounded-lg bg-accentCyan/10 flex items-center justify-center text-accentCyan text-lg">📍</span>
+              <div>
+                <h4 class="text-xs text-slate-500 font-bold uppercase">Primary Location</h4>
+                <p class="text-sm font-semibold text-slate-700 dark:text-slate-400">Uttar Pradesh, India</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form (Right Side) -->
+        <div class="md:col-span-7">
+          <div class="glass-card p-6 md:p-8 border-slate-200 dark:border-slate-800/40">
+            <form id="contactForm" class="space-y-4">
+              <!-- Inline Alerts -->
+              <div id="formAlert" class="hidden p-3 rounded-lg border text-sm transition-all duration-300 opacity-0" role="alert"></div>
+
+              <div>
+                <label for="contactName" class="block text-xs font-bold uppercase text-slate-600 dark:text-slate-400 mb-1">Your Name *</label>
+                <input type="text" id="contactName" required placeholder="Alex Mercer" class="w-full bg-slate-800/30 border border-slate-200 dark:border-slate-800/40 rounded-lg px-4 py-2.5 text-sm text-slate-200 focus:outline-none focus:border-accentBlue transition-all">
+              </div>
+
+              <div>
+                <label for="contactEmail" class="block text-xs font-bold uppercase text-slate-600 dark:text-slate-400 mb-1">Email Address *</label>
+                <input type="email" id="contactEmail" required placeholder="name@domain.com" class="w-full bg-slate-800/30 border border-slate-200 dark:border-slate-800/40 rounded-lg px-4 py-2.5 text-sm text-slate-200 focus:outline-none focus:border-accentBlue transition-all">
+              </div>
+
+              <div>
+                <label for="contactSubject" class="block text-xs font-bold uppercase text-slate-600 dark:text-slate-400 mb-1">Subject</label>
+                <input type="text" id="contactSubject" placeholder="Internship Opportunity / Freelance Inquiry" class="w-full bg-slate-800/30 border border-slate-200 dark:border-slate-800/40 rounded-lg px-4 py-2.5 text-sm text-slate-200 focus:outline-none focus:border-accentBlue transition-all">
+              </div>
+
+              <div>
+                <label for="contactMessage" class="block text-xs font-bold uppercase text-slate-600 dark:text-slate-400 mb-1">Message *</label>
+                <textarea id="contactMessage" required rows="4" placeholder="Briefly describe your details..." class="w-full bg-slate-800/30 border border-slate-200 dark:border-slate-800/40 rounded-lg px-4 py-2.5 text-sm text-slate-200 focus:outline-none focus:border-accentBlue transition-all"></textarea>
+              </div>
+
+              <button type="submit" class="btn-glow w-full py-3 rounded-lg bg-accentBlue text-white font-semibold shadow-glow-blue hover:bg-blue-600 transition-all flex items-center justify-center gap-2">
+                Send Message
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 5l7 7-7 7M5 5l7 7-7 7"/></svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. Connect With Me Section -->
+  <section id="connect" class="py-16 relative border-t border-slate-100/5 dark:border-slate-800/30 bg-slate-900/10">
+    <div class="max-w-7xl mx-auto px-6 text-center space-y-8">
+      <div class="text-center max-w-3xl mx-auto mb-16 p-6 rounded-2xl bg-cardLight dark:bg-cardDark border border-slate-200 dark:border-accentPurple/20 shadow-md dark:shadow-glow-purple backdrop-blur-md reveal-hidden">
+        <h2 class="text-xs font-mono font-bold uppercase tracking-widest text-accentPurple mb-2">10. Social Grid</h2>
+        <p class="text-2xl sm:text-3xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-snug">Connect Across Networks</p>
+      </div>
+      
+      <div id="socialGrid" class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-4 max-w-5xl mx-auto">
+        <!-- Injected dynamically -->
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. Footer Section -->
+  <footer class="py-12 relative border-t border-slate-100/5 dark:border-slate-800/30 bg-darkBg text-slate-500">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+      
+      <!-- Logo Credit -->
+      <div class="flex flex-col items-center md:items-start gap-1">
+        <a href="#hero" class="text-md font-bold tracking-tight text-slate-900 dark:text-white">
+          RAHUL<span class="text-accentCyan font-mono">.ds()</span>
+        </a>
+        <p class="text-xs text-slate-500 mt-1">© 2026 Rahul Bhadoriya. All Rights Reserved.</p>
+      </div>
+
+      <!-- Quick links / policy -->
+      <div class="flex gap-6 text-xs font-semibold text-slate-600 dark:text-slate-400">
+        <a href="#about" class="hover:text-accentCyan transition-colors">About</a>
+        <a href="#skills" class="hover:text-accentCyan transition-colors">Skills</a>
+        <a href="#projects" class="hover:text-accentCyan transition-colors">Projects</a>
+        <a href="#" class="hover:text-accentCyan transition-colors">Privacy Policy</a>
+      </div>
+
+      <!-- Developed with credit -->
+      <div class="text-xs text-center md:text-right" id="footerCredit">
+        Designed & Developed by Your Name
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back-to-Top Button -->
+  <button id="backToTopBtn" class="fixed bottom-6 right-6 w-12 h-12 rounded-full bg-accentBlue text-white shadow-glow-blue border border-accentBlue/40 flex items-center justify-center cursor-pointer opacity-0 translate-y-4 pointer-events-none transition-all duration-300 z-[90] hover:-translate-y-1 hover:bg-blue-600 hover:scale-105" aria-label="Back to top">
+    ▲
+  </button>
+
+</body>
+</html>
