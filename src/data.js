@@ -14,7 +14,7 @@ export const personalInfo = {
   email: "rahulbh8077@gmail.com",
   phone: "+91-8077338892",
   location: "Uttar Pradesh-India",
-  resumeUrl: "https://drive.google.com/file/d/1aQEG-Es5LXjs0S8A0IG4gWa7J9HPo6FD/view?usp=drive_link", // Will trigger interactive preview/download
+  resumeUrl: "https://drive.google.com/file/d/15tPxniSjQF-e_Kl6nOxs-jn8dWhP4_vt/view?usp=drive_link", // Will trigger interactive preview/download
   githubUsername: "rahulbh8077"
 };
 // Education Section

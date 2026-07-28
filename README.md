@@ -60,7 +60,7 @@
 [ Data Analyst ] -> [ Machine Learning Enthusiast ] -> [ AI Explorer ] -> [ Python Developer ] -> [ Gen-AI Explorer ]
 ```
 
-*   📥 **[Download Curriculum Vitae (PDF)](https://drive.google.com/file/d/1aQEG-Es5LXjs0S8A0IG4gWa7J9HPo6FD/view?usp=drive_link)**
+*   📥 **[Download Curriculum Vitae (PDF)](https://drive.google.com/file/d/15tPxniSjQF-e_Kl6nOxs-jn8dWhP4_vt/view?usp=drive_link)**
 *   💬 **[Get In Touch](#-contact)**
 
 ---
