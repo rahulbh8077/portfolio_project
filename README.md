@@ -78,7 +78,7 @@ I am a highly motivated Data Scientist passionate about converting unstructured 
 
 ## 🛠️ Tech Stack:
 
-### Languages & Frameworks
+### Languages & Frameworks:
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![SQL](https://img.shields.io/badge/SQL-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/javascript-%23F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black)
