@@ -25,7 +25,7 @@
 
 ---
 
-## 📖 Table of Contents
+## 📖 Table of Contents:
 1. [Hero Banner](#-hero-banner)
 2. [About Me](#-about-me)
 3. [Tech Stack](#-tech-stack)
