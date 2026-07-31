@@ -65,7 +65,7 @@
 
 ---
 
-## 👤 About Me
+## 👤 About Me:
 
 I am a highly motivated Data Scientist passionate about converting unstructured data logs into predictive capabilities. My expertise lies in designing scalable machine learning pipelines, fine-tuning deep learning models, and building responsive, data-driven applications.
 
