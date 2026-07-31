@@ -48,7 +48,7 @@
 
 ---
 
-## 🚀 Hero Banner
+## 🚀 Hero Banner:
 
 ### `Hello, I'm`
 # **Rahul Bhadoriya**
