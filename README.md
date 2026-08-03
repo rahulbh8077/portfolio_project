@@ -168,7 +168,7 @@ flowchart LR
 
 ---
 
-## 📁 Folder Structure
+## 📁 Folder Structure:
 
 ```text
 portfolio-project/
