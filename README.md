@@ -139,7 +139,7 @@ graph TD
 
 ## 🔄 Development Workflows:
 
-### 1. Portfolio Development Pipeline
+### 1. Portfolio Development Pipeline:
 ```mermaid
 flowchart TD
     Idea[Concept & Core Requirements] --> Research[Competitor & Portfolio Research]
