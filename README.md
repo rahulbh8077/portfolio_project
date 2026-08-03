@@ -137,7 +137,7 @@ graph TD
 
 ---
 
-## 🔄 Development Workflows
+## 🔄 Development Workflows:
 
 ### 1. Portfolio Development Pipeline
 ```mermaid
