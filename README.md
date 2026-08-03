@@ -152,7 +152,7 @@ flowchart TD
     Deploy --> Live[Production Deployment]
 ```
 
-### 2. Form Submission Serverless API Flow
+### 2. Form Submission Serverless API Flow:
 ```mermaid
 flowchart LR
     Client[Client Form Submit] -->|POST Request| Route[/api/contact]
