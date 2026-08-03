@@ -111,7 +111,7 @@ I am a highly motivated Data Scientist passionate about converting unstructured 
 
 ---
 
-## 🏛️ Portfolio Architecture
+## 🏛️ Portfolio Architecture:
 
 The following structural mapping represents the frontend routing layout and component tree hierarchy.
 
