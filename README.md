@@ -197,7 +197,7 @@ portfolio-project/
 
 ---
 
-## ⚙️ Project System Flow
+## ⚙️ Project System Flow:
 
 This workflow illustrates how the client navigation flows down to the email submission process.
 
