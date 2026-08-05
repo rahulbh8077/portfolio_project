@@ -233,7 +233,7 @@ flowchart TD
 
 ---
 
-## 📅 Tech Timeline & Roadmap
+## 📅 Tech Timeline & Roadmap:
 
 My learning journey and future technology acquisitions.
 
