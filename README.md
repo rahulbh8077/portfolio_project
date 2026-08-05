@@ -249,7 +249,7 @@ timeline
 
 ---
 
-## 🌿 Git Branching Model-
+## 🌿 Git Branching Model:
 
 ```mermaid
 gitGraph
