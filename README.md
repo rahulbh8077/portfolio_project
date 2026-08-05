@@ -218,7 +218,7 @@ flowchart TD
 
 ---
 
-## ✨ Feature Highlights
+## ✨ Feature Highlights:
 
 <details>
 <summary><b>🔍 Expand Details on Core Features</b></summary>
