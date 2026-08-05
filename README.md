@@ -1,4 +1,4 @@
-# 🌌 Premium Data Science & AI Portfolio"
+# 🌌  Data Science & AI Portfolio"
 
 <div align="center">
 
